@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <a class="btn btn=primary" routerLink="/admin">Back to List</a>
+  </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Tv Show Details</h3>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <div class="white-box text-center"><img [src]="'data:image/jpeg;base64,' + tvShow?.picByte"  class="card-img-top"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-6">
+                    <h1>{{tvShow?.tvShowName}}</h1>
+                    <h2 style="margin-bottom:50px ;">Actor - {{tvShow?.actor }}</h2>
+                    <h2 style="margin-bottom:80px ;">Release Date - {{tvShow?.releaseDate}}</h2>
+                    <button type="button" style="margin-right:7px " class="btn btn-primary"><span class="badge">{{tvShow?.genre}}</span></button>
+                    <button type="button" class="btn btn-success">Seasons <span class="badge">{{tvShow?.numberOfSeasons}}</span></button>
+                    <button type="submit" style="float: right;" (click)="onDelete()" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

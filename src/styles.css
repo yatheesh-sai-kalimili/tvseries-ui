@@ -1,0 +1,7 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './css/tvshow.css';
+
+html, body { height: 100%;
+background-color: #ffffff;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
